@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() 
+{ 
+    int a, b, c; 
+
+    scanf("%d %d %d", &a, &b, &c); // 3 2 1 // 2 2 1
+
+    if(a>b) 
+    { 
+        printf("%d %d %d", a>c ? (b>c ? c:b):b,  a>c ? (b>c ? b:c):a, a>c ? a:c); 
+    } 
+    else if(a<b) 
+    { 
+        printf("%d %d %d", b>c ? (a>c ? c:a):a, b>c ? (a>c ? a:c):b, b>c ? (a>c ? b:b):c); 
+    } 
+    else if(a==b) 
+    { 
+        printf("%d %d %d", b>c ? c:a, b>c ? b:b, b>c ? a:c); 
+    } 
+
+    return 0; 
+}
+//1172
+//삼항연산자 
