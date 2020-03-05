@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+struct PRODUCT {
+	char name[30];
+	int price;
+	int stock;
+};
+
+void print_product(struct PRODUCT a) {
+	printf("[%s %dwon Stock:%d]\n", a.name, a.price, a.stock);
+}
+
+int main() {	
+	struct PRODUCT americano;// 구조체 , 이름
+	
+	printf("Product name? ");
+	scanf("%s", americano.name);
+	//이름.상세이름
+	printf("Price? ");
+	scanf("%d", &americano.price);
+	
+	printf("Stock? ");
+	scanf("%d", &americano.stock);
+	
+	print_product(americano);
+	
+	return 0;
+	
+}
