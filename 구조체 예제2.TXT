@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct product{
+	int code;
+	float length;
+}a,b;
+
+int main(void)
+{
+	a.code = 10;
+	a.length = 102.8;
+	
+	b.code = 20;
+	b.length = 120.4;
+	
+	printf("a.code = %d a.length = %4.1f\n", a.code, a.length);
+	printf("b.code = %d b.length = %4.1f\n", b.code, b.length);
+}
